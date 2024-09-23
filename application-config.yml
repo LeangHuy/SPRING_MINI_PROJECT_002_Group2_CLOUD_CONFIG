@@ -20,5 +20,5 @@ springdoc:
   swagger-ui:
     oauth:
       client-id: mini-project-2
-      client-secret: DJk2UQEvfm4ZK7bxzxhF0C4zO0RQVAhk #khouch
+      client-secret: db7kDC5HsvkswzEk5yBG4syLr1voP6I9  #khouch
       realm: mini-project-2
