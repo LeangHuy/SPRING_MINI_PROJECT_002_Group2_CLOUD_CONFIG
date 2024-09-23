@@ -9,8 +9,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/realms/mini-project-2
-          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs #optional
-#          jwk-set-uri: http://localhost:8080/realms/myauth/protocol/openid-connect/certs
+
 # Keycloak configuration
 keycloak:
   realm: mini-project-2
@@ -25,6 +24,6 @@ springdoc:
   swagger-ui:
     oauth:
       client-id: mini-project-2
-      client-secret: CjAPGgpaxeIkeU09QORygtzHRa6i4ZTS
+      client-secret: DJk2UQEvfm4ZK7bxzxhF0C4zO0RQVAhk
       realm: mini-project-2
     tags-sorter: alpha
