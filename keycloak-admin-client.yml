@@ -3,9 +3,6 @@ server:
 spring:
   application:
     name: keycloak-admin-client
-  cloud:
-    config:
-      enabled: false
   #Resource server configuration
   security:
     oauth2:
