@@ -20,3 +20,10 @@ keycloak:
     secret: DJk2UQEvfm4ZK7bxzxhF0C4zO0RQVAhk
     client-id: mini-project-2
     provider: secret
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: myauth
+      client-secret: CjAPGgpaxeIkeU09QORygtzHRa6i4ZTS
+      realm: myauth
+    tags-sorter: alpha
