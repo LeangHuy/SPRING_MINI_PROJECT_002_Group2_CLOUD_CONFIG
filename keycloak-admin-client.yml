@@ -3,26 +3,3 @@ server:
 spring:
   application:
     name: keycloak-admin-client
-  #Resource server configuration
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8080/realms/mini-project-2
-
-# Keycloak configuration
-keycloak:
-  realm: mini-project-2
-  resource: mini-project-2
-  auth-server-url: http://localhost:8080/
-  credentials:
-    secret: DJk2UQEvfm4ZK7bxzxhF0C4zO0RQVAhk
-    client-id: mini-project-2
-    provider: secret
-# Swagger configuration
-springdoc:
-  swagger-ui:
-    oauth:
-      client-id: mini-project-2
-      client-secret: DJk2UQEvfm4ZK7bxzxhF0C4zO0RQVAhk
-      realm: mini-project-2
