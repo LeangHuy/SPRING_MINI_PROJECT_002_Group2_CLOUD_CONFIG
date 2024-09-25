@@ -13,7 +13,7 @@ spring:
         - id: keycloak-admin-client
           uri: lb://keycloak-admin-client
           predicates:
-            - Path=[/api/v1/users/**, /api/v1/groups/**]
+            - Path=/api/v1/users/**, /api/v1/groups/**
         - id: task-service
           uri: lb://task-service
           predicates:
