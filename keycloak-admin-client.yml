@@ -3,3 +3,7 @@ server:
 spring:
   application:
     name: keycloak-admin-client
+management:
+  tracing:
+    sampling:
+      probability: 1.0

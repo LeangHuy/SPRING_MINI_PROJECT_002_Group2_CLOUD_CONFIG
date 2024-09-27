@@ -3,3 +3,28 @@ spring:
     url: jdbc:postgresql://localhost:5435/task_db
     username: task_db
     password: 12345
+eureka:
+  instance:
+    prefer-ip-address: true
+resilience4j:
+  circuitbreaker:
+    instances:
+      keycloakAdminClient:
+        registerHealthIndicator: true
+        slidingWindowSize: 5
+        minimumNumberOfCalls: 3
+        failureRateThreshold: 50
+        waitDurationInOpenState: 3s
+        permittedNumberOfCallsInHalfOpenState: 3
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: health, circuitbreakers
+  endpoint:
+    health:
+      show-details: always

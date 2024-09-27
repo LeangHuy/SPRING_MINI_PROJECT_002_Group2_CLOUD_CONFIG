@@ -31,6 +31,13 @@ spring:
             - Path=/v3/api-docs/task-service
           filters:
             - RewritePath=/v3/api-docs/task-service, /v3/api-docs
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+eureka:
+  instance:
+    prefer-ip-address: true
 
 springdoc:
   swagger-ui:
