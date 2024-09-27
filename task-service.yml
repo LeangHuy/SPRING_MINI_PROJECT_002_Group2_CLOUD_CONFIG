@@ -7,7 +7,7 @@ eureka:
   instance:
     prefer-ip-address: true
 resilience4j:
-  circuitbreaker:
+  keycloakAdminClient:
     instances:
       keycloakAdminClient:
         registerHealthIndicator: true
